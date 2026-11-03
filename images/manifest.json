@@ -1,0 +1,19 @@
+{
+	"name": "Chao Shang | 尚超",
+	"short_name": "Chao Shang",
+	"description": "Chao Shang — Security protocol design, AI agent security, computing and data center network security, 5G/6G security, and intelligent connected vehicle and embodied intelligence security.",
+	"start_url": "/",
+	"lang": "en-US",
+	"icons": [
+		{
+			"src": "/images/favicon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/favicon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
