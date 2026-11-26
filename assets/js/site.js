@@ -25,4 +25,17 @@
     follow.setAttribute('aria-expanded', String(show));
   });
   window.addEventListener('resize', () => { if (innerWidth >= 925 && links) links.style.display = ''; });
+
+  const visitorEndpoint = document.currentScript?.dataset.visitorEndpoint;
+  if (visitorEndpoint && location.protocol === 'https:') {
+    fetch(visitorEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ path: location.pathname }),
+      credentials: 'omit',
+      cache: 'no-store',
+      keepalive: true,
+      referrerPolicy: 'no-referrer'
+    }).catch(() => {});
+  }
 })();
